@@ -26,6 +26,12 @@ compose.desktop {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
             packageName = "VasDollyHelper"
             packageVersion = "1.0.0"
+
+            windows {
+                menu = true
+                // see https://wixtoolset.org/documentation/manual/v3/howtos/general/generate_guids.html
+                upgradeUuid = "01AD1E60-B0BA-43A8-B9AD-A4054EF111A4"
+            }
         }
     }
 }
